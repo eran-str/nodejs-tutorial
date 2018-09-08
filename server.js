@@ -1,7 +1,7 @@
 const express = require('express');
 const hbs = require('hbs');
 
-port = process.env.port || 3000;
+var port = process.env.port || 3000;
 var app = express();
 app.set('view engine', 'hbs');
 app.use(express.static(__dirname + '/public'));
@@ -20,4 +20,4 @@ app.get('/',(req,res)=>{
   });
 });
 
-app.listen(port, ()=>{console.log(`'server is up in port ${port}`)});
+app.listen(port, ()=>{console.log(`server is up in port ${port}`)});
