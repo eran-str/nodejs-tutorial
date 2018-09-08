@@ -20,4 +20,4 @@ app.get('/',(req,res)=>{
   });
 });
 
-app.listen(port, ()=>{console.log('server is up in port 3000')});
+app.listen(port, ()=>{console.log(`'server is up in port ${port}`)});
