@@ -1,7 +1,7 @@
 const express = require('express');
 const hbs = require('hbs');
 
-var port = process.env.port || 3000;
+var port = process.env.PORT || 3000;
 var app = express();
 app.set('view engine', 'hbs');
 app.use(express.static(__dirname + '/public'));
